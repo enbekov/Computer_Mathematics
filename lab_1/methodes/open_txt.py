@@ -11,9 +11,9 @@ def get_all_equations():  # Получаем все уравнения из фа
 
 
 def f(line_number, param):
-    array = get_all_equations()
+    array = get_all_equations()  # Получаем уравнения в виде списка
     x = param  # Заменяем все x в уравнении из array переменной param. Заменится после eval(a)
     a = array[int(line_number)]
-    b = eval(a)  # Использовать eval() не рекомендуется по соображениям безопастности
-    return b     # Я ищу другие способы. Нужно использовать математические библиотеки типа numpy
+    b = eval(a)
+    return b
 
